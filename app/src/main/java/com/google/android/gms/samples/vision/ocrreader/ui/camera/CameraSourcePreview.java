@@ -24,6 +24,7 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.gms.common.images.Size;
 
@@ -56,8 +57,12 @@ public class CameraSourcePreview extends ViewGroup {
         if (cameraSource == null) {
             stop();
         }
-
+        Toast.makeText(mContext.getApplicationContext(), "Made By Vishal Singh.",
+                Toast.LENGTH_SHORT).show();
         mCameraSource = cameraSource;
+
+        Toast.makeText(mContext.getApplicationContext(), "Made By Vishal Singh.",
+                Toast.LENGTH_SHORT).show();
 
         if (mCameraSource != null) {
             mStartRequested = true;
